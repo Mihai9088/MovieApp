@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
     <> 
-    < div className ={classes.bannerImg}></div>
+    < div className ={classes.bannerImg}></div> 
 <MovieList/>
 </>)
 }
