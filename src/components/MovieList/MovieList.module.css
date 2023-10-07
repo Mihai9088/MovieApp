@@ -1,0 +1,27 @@
+
+
+
+
+.movieList h2
+{
+  color: #f3f3d4; 
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+
+.movieContainer {
+
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: space-between; 
+}
+
+@media (max-width: 767px) {
+   
+    .movieContainer {
+      flex-direction: column; 
+    
+    }
+  }

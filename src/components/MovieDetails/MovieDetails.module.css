@@ -1,0 +1,112 @@
+/* MovieDetails.module.css */
+
+.movieSection {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+   color: white;
+    font-weight: 400;
+  }
+  
+  .movieRating {
+    padding-left: 3px;
+    margin-top: 20px;
+    color: #fdfdc2;
+    display: flex;
+  
+  }
+
+  .movieRating span{
+    
+        margin-right: 20px;
+      
+  }
+  
+  .movieTitle {
+    font-size: 40px;
+    color: #fcfc76;
+  
+  }
+  .moviePlot {
+    margin-top: 20px;
+    line-height: 1.8rem;
+  }
+  
+  .mvspan {
+    padding: 10px 0px;
+    font-weight: 600;
+    width: 100px;
+    display: inline-block;
+  }
+
+ 
+  
+  .movieInfo > div span {
+    color: green;
+  }
+  
+  
+  .sectionRight {
+    margin-left: 30px;
+  }
+
+  .detailIcon{
+    color: #fcfc76;
+    margin-bottom:-3px ;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+ 
+@media (max-width: 768px) {
+    .movieSection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .movieRating {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .movieTitle {
+      font-size: 32px;
+    }
+  
+    .movieInfo > div span:first-child {
+      width: auto;
+    }
+  
+    .movieInfo > div {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+  }
+  
+  .loadingText {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .loadingSpinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #B3541E; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
